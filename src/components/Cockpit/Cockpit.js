@@ -2,6 +2,7 @@ import React from 'react';
 import classes from './Cockpit.css';
 
 
+
 const cockpit = (props) => {
   const assignedClasses =[];
   let btnClass = '';
@@ -21,12 +22,12 @@ const cockpit = (props) => {
   return (
   <div className={classes.Cockpit}>
     <h1>Hello there</h1>
-    <p className={assignedClasses.join(' ')}>This is really far out man!</p>
-    <button
-      className={btnClass}
-      onClick={props.clicked}>Toggle Persons</button>
+      <p className={assignedClasses.join(' ')}>This is really far out man!</p>
+     <button
+       className={btnClass}
+       onClick={props.clicked}>Toggle Persons</button>
+      <button onClick={props.login}>Log in</button>
   </div>
-
     );
 };
 
